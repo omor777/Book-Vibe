@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import bannerImg from "../../assets/banner.png";
 import Button from "../Button/Button";
 
@@ -10,7 +11,9 @@ const Banner = () => {
           <h2 className="text-56px text-black-100 font-bold font-playFair-display leading-84px max-w-[32.875rem] mb-12">
             Books to freshen up your bookshelf
           </h2>
-          <Button bgColor={"#23BE0A"}>View The List</Button>
+          <Link to={"/listed_books"}>
+            <Button bgColor={"#23BE0A"}>View The List</Button>
+          </Link>
         </div>
         <div className="order-1 sm:order-2">
           <img src={bannerImg} alt="banner-image" />

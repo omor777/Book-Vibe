@@ -1,0 +1,80 @@
+[
+  {
+    "bookId": "1",
+    "bookName": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "image": "https://i.postimg.cc/SQ9bwdpw/kindpng-4945926-1-2.png",
+    "review": "The Great Gatsby by F. Scott Fitzgerald is a mesmerizing portrayal of the Jazz Age, delving into the lives of the rich and famous in 1920s America. Through the eyes of narrator Nick Carraway, we are introduced to the enigmatic Jay Gatsby, whose extravagant parties and mysterious past captivate the imagination. Fitzgerald's lyrical prose beautifully captures the glamour and excess of the era, while also exploring themes of love, ambition, and the American Dream. With its timeless characters and evocative setting, The Great Gatsby remains a classic of American literature, offering readers a poignant reflection on the pursuit of happiness and the emptiness of materialism.",
+    "totalPages": 218,
+    "rating": 4.5,
+    "category": "Fiction",
+    "tags": ["Classics", "Romance"],
+    "publisher": "Scribner",
+    "yearOfPublishing": 1925
+  },
+  {
+    "bookId": "2",
+    "bookName": "1984",
+    "author": "George Orwell",
+    "image": "https://i.postimg.cc/6qCtgtNT/kindpng-2193744-1.png",
+    "review": "1984 by George Orwell presents a chilling dystopian vision that remains hauntingly relevant in today's society. Set in a totalitarian regime where Big Brother watches your every move, the novel follows protagonist Winston Smith as he rebels against the oppressive regime. Orwell's depiction of surveillance, censorship, and psychological manipulation serves as a stark warning about the dangers of unchecked government power and the erosion of individual freedom. Through its thought-provoking narrative, 1984 forces readers to confront uncomfortable truths about society and the nature of truth itself. A masterpiece of speculative fiction, this book challenges readers to question authority and resist the forces that seek to control us.",
+    "totalPages": 328,
+    "rating": 4.8,
+    "category": "Fiction",
+    "tags": ["Dystopian", "Political"],
+    "publisher": "Secker & Warburg",
+    "yearOfPublishing": 1949
+  },
+  {
+    "bookId": "3",
+    "bookName": "The Hitchhiker's Guide to the Galaxy",
+    "author": "Douglas Adams",
+    "image": "https://i.postimg.cc/hvVQrky1/kindpng-1064993.png",
+    "review": "The Hitchhiker's Guide to the Galaxy by Douglas Adams is a hilarious and imaginative journey through space that delights readers with its wit and absurdity. Following the misadventures of Arthur Dent, a hapless human who is rescued from Earth's destruction by an alien named Ford Prefect, the novel takes readers on a whirlwind tour of the cosmos. With its offbeat humor and playful narrative style, Adams explores existential questions about the meaning of life, the universe, and everything in between. From the eccentricities of alien cultures to the absurdity of bureaucracy, The Hitchhiker's Guide to the Galaxy is a delightfully quirky romp that reminds us not to take ourselves too seriously.",
+    "totalPages": 224,
+    "rating": 4.6,
+    "category": "Science Fiction",
+    "tags": ["Humor", "Adventure"],
+    "publisher": "Pan Books",
+    "yearOfPublishing": 1979
+  },
+  {
+    "bookId": "4",
+    "bookName": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "image": "https://i.postimg.cc/HxY0gBJd/kindpng-5624060-1.png",
+    "review": "To Kill a Mockingbird by Harper Lee is a poignant exploration of racial injustice and moral growth in the Deep South. Through the eyes of young Scout Finch, readers are transported to the small town of Maycomb, Alabama, where racial tensions run high. When Scout's father, Atticus Finch, defends a black man falsely accused of raping a white woman, the town's prejudices are laid bare. Lee's masterful storytelling captures the complexities of race, class, and morality, offering readers a powerful meditation on empathy, compassion, and the courage to stand up for what is right. With its enduring themes and unforgettable characters, To Kill a Mockingbird remains a timeless classic that continues to resonate with readers of all ages.",
+    "totalPages": 281,
+    "rating": 4.7,
+    "category": "Fiction",
+    "tags": ["Coming of Age", "Social Issues"],
+    "publisher": "J. B. Lippincott & Co.",
+    "yearOfPublishing": 1960
+  },
+  {
+    "bookId": "5",
+    "bookName": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "image": "https://i.postimg.cc/HkbPWvLy/kindpng-81724-1.png",
+    "review": "The Catcher in the Rye by J.D. Salinger is a timeless portrayal of teenage angst and rebellion that continues to resonate with readers around the world. Narrated by the disillusioned teenager Holden Caulfield, the novel follows his journey through New York City as he grapples with the phoniness of the adult world. Salinger's poignant prose captures the alienation and confusion of adolescence, offering readers an intimate glimpse into the mind of a troubled young man searching for authenticity and connection in a superficial society. With its raw honesty and emotional depth, The Catcher in the Rye remains a classic coming-of-age story that speaks to the universal experience of growing up and finding one's place in the world.",
+    "totalPages": 277,
+    "rating": 4.4,
+    "category": "Fiction",
+    "tags": ["Classic", "Literary Fiction"],
+    "publisher": "Little, Brown and Company",
+    "yearOfPublishing": 1951
+  },
+  {
+    "bookId": "6",
+    "bookName": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling",
+    "image": "https://i.postimg.cc/W12TvZNT/kindpng-7318921.png",
+    "review": "Harry Potter and the Sorcerer's Stone by J.K. Rowling is an enchanting start to a beloved series, full of magic and adventure that has captured the hearts of readers of all ages. Follow Harry Potter, a young boy who discovers he is a wizard, as he begins his journey at Hogwarts School of Witchcraft and Wizardry. Alongside his friends Ron and Hermione, Harry uncovers the mysteries of the magical world while facing challenges from dark forces that threaten to destroy it. Rowling's imaginative storytelling and richly detailed world-building create a captivating reading experience that transports readers to a world of wonder and possibility. With its themes of friendship, bravery, and the power of love, Harry Potter and the Sorcerer's Stone is a timeless tale that continues to inspire and enchant readers worldwide.",
+    "totalPages": 320,
+    "rating": 4.9,
+    "category": "Fantasy",
+    "tags": ["Magic", "Wizardry"],
+    "publisher": "Bloomsbury",
+    "yearOfPublishing": 1997
+  }
+]
