@@ -35,9 +35,14 @@ export default {
       fontSize: {
         "28px": "1.75rem",
         "40px": "2.5rem",
+        '56px':'3.5rem',
       },
       lineHeight: {
         "26px": "1.625rem",
+        "84px": "5.25rem",
+      },
+      container: {
+        center: true,
       },
     },
   },

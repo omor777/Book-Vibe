@@ -1,12 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import Banner from "../../components/Banner/Banner";
 
-const Home = props => {
+const Home = (props) => {
   return (
-    <div>Home</div>
-  )
-}
+    <div>
+      <Banner />
+    </div>
+  );
+};
 
-Home.propTypes = {}
+Home.propTypes = {};
 
-export default Home
+export default Home;
