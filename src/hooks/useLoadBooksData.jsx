@@ -6,13 +6,14 @@ const useLoadBooksData = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch("./booksData.json")
+    fetch("/books.json")
       .then((res) => res.json())
       .then((data) => {
         setBooks(data);
         setIsLoading(false);
       });
   }, []);
+
   return { isLoading, books };
 };
 

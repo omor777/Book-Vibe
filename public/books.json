@@ -1,6 +1,6 @@
 [
   {
-    "bookId": "1",
+    "bookId": 1,
     "bookName": "The Great Gatsby",
     "author": "F. Scott Fitzgerald",
     "image": "https://i.postimg.cc/SQ9bwdpw/kindpng-4945926-1-2.png",
@@ -13,7 +13,7 @@
     "yearOfPublishing": 1925
   },
   {
-    "bookId": "2",
+    "bookId": 2,
     "bookName": "1984",
     "author": "George Orwell",
     "image": "https://i.postimg.cc/6qCtgtNT/kindpng-2193744-1.png",
@@ -26,7 +26,7 @@
     "yearOfPublishing": 1949
   },
   {
-    "bookId": "3",
+    "bookId": 3,
     "bookName": "The Hitchhiker's Guide to the Galaxy",
     "author": "Douglas Adams",
     "image": "https://i.postimg.cc/hvVQrky1/kindpng-1064993.png",
@@ -39,7 +39,7 @@
     "yearOfPublishing": 1979
   },
   {
-    "bookId": "4",
+    "bookId": 4,
     "bookName": "To Kill a Mockingbird",
     "author": "Harper Lee",
     "image": "https://i.postimg.cc/HxY0gBJd/kindpng-5624060-1.png",
@@ -52,7 +52,7 @@
     "yearOfPublishing": 1960
   },
   {
-    "bookId": "5",
+    "bookId": 5,
     "bookName": "The Catcher in the Rye",
     "author": "J.D. Salinger",
     "image": "https://i.postimg.cc/HkbPWvLy/kindpng-81724-1.png",
@@ -65,7 +65,7 @@
     "yearOfPublishing": 1951
   },
   {
-    "bookId": "6",
+    "bookId": 6,
     "bookName": "Harry Potter and the Sorcerer's Stone",
     "author": "J.K. Rowling",
     "image": "https://i.postimg.cc/W12TvZNT/kindpng-7318921.png",
