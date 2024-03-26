@@ -1,8 +1,11 @@
 import { NavLink } from "react-router-dom";
 import Button from "../Button/Button";
 import { HiOutlineBars3BottomLeft } from "react-icons/hi2";
+import { useContext } from "react";
+import { ToggleContext } from "../../layouts/Root";
 
 const Navbar = () => {
+  const toggleValue = useContext(ToggleContext);
   return (
     <nav className="flex items-center justify-between my-12 container px-4 lg:px-0">
       <h3 className="text-black-100 text-28px font-work-sans font-bold">
@@ -44,9 +47,12 @@ const Navbar = () => {
         <Button bgColor={"#23BE0A"}>Sing In</Button>
         <Button bgColor={"#59C6D2"}>Sing Up</Button>
       </div>
-      <div className="hover:bg-gray-200 duration-300 p-1 rounded-md lg:hidden">
+      <label
+        htmlFor={toggleValue}
+        className="hover:bg-gray-200 duration-300 p-1 rounded-md lg:hidden"
+      >
         <HiOutlineBars3BottomLeft className="text-3xl cursor-pointer" />
-      </div>
+      </label>
     </nav>
   );
 };
