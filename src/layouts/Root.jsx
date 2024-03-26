@@ -7,7 +7,7 @@ import Button from "../components/Button/Button";
 export const ToggleContext = createContext(null);
 
 const Root = () => {
-  const [toggleValue, setToggleValue] = useState("my-drawer");
+  const [toggleValue] = useState("my-drawer");
 
   return (
     <>
@@ -37,7 +37,7 @@ const Root = () => {
                   className={({ isActive }) => {
                     return isActive
                       ? "text-lg font-work-sans btn btn-outline text-green-900  font-semibold  rounded-lg border border-green-900 cursor-pointer hover:bg-green-900 hover:border-green-900"
-                      : "text-black-80 text-lg font-work-sans btn bg-transparent border-none shadow-none hover:bg-green-5 hover:text-green-900";
+                      : "text-black-80 text-lg font-work-sans btn  bg-transparent border-none shadow-none hover:bg-green-5 hover:text-green-900";
                   }}
                 >
                   Home
@@ -47,7 +47,7 @@ const Root = () => {
                   className={({ isActive }) => {
                     return isActive
                       ? "text-lg font-work-sans btn btn-outline text-green-900  font-semibold  rounded-lg border border-green-900 cursor-pointer hover:bg-green-900 hover:border-green-900"
-                      : "text-black-80 text-lg font-work-sans btn bg-transparent border-none shadow-none hover:bg-green-5 hover:text-green-900";
+                      : "text-black-80 text-lg font-work-sans btn  bg-transparent border-none shadow-none hover:bg-green-5 hover:text-green-900";
                   }}
                 >
                   Listed Books
@@ -61,6 +61,17 @@ const Root = () => {
                   }}
                 >
                   Pages to Read
+                </NavLink>
+
+                <NavLink
+                  to={"/contact"}
+                  className={({ isActive }) => {
+                    return isActive
+                      ? "text-lg font-work-sans btn btn-outline text-green-900  font-semibold  rounded-lg border border-green-900 cursor-pointer hover:bg-green-900 hover:border-green-900"
+                      : "text-black-80 text-lg font-work-sans btn bg-transparent border-none shadow-none hover:bg-green-5 hover:text-green-900";
+                  }}
+                >
+                  Contact
                 </NavLink>
                 <NavLink
                   to={"/faq"}

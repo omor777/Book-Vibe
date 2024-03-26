@@ -1,7 +1,7 @@
 const Faq = () => {
   return (
-    <section className="container px-4 lg:px-0">
-      <h2 className="text-[clamp(24px,5vw,36px)] font-bold font-work-sans text-center mt-20">
+    <section className="container px-4 lg:px-0 ">
+      <h2 className="text-[clamp(24px,5vw,36px)] font-bold font-work-sans text-center mt-40">
         Frequently Asked Question?
       </h2>
       <p className="max-w-xl text-center mx-auto mt-4">
@@ -9,7 +9,7 @@ const Faq = () => {
         commonly asked questions about our e-book platform.
       </p>
       <div className=" flex items-center justify-center mt-10">
-        <div className="join join-vertical w-full max-w-4xl mx-auto bg-green-5 shadow-md">
+        <div className="join join-vertical w-full max-w-4xl mx-auto bg-black-5">
           <div className="collapse collapse-arrow join-item border border-base-300">
             <input type="radio" name="my-accordion-4" defaultChecked />
             <div className="collapse-title text-xl font-semibold font-work-sans">
