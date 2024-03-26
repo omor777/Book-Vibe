@@ -49,7 +49,7 @@ const BookDetails = () => {
     const isAlreadyAddToReadList = readList.find(
       (item) => item.bookId == Number(id)
     );
-    if (!!isAlreadyAddToReadList) {
+    if (isAlreadyAddToReadList) {
       toast.error("You have already read this book!");
     } else {
       saveDataToLocalStorage(

@@ -23,7 +23,7 @@ const PagesToRead = () => {
     return acc;
   }, []);
 
-  console.log(data);
+  
 
   const colors = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "red", "pink"];
 
@@ -71,9 +71,13 @@ const PagesToRead = () => {
     return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
   };
 
+
+
+  
+
   return (
     <section className="container flex items-center justify-center mt-40">
-      <div className="overflow-x-auto">
+      <div className="overflow-x-auto bg-[#13131308] rounded-2xl p-14">
         <BarChart
           width={900}
           height={600}

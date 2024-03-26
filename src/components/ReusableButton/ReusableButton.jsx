@@ -16,7 +16,7 @@ const ReusableButton = ({ children = "Default", height, padding_x }) => {
 };
 
 ReusableButton.propTypes = {
-  children: PropTypes.string,
+  
   height: PropTypes.string,
   padding_x: PropTypes.string,
 };

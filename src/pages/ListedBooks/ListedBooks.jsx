@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import PropTypes from "prop-types";
+import { useEffect, useState } from "react";
+
 import { Link } from "react-router-dom";
 
 import BookCard from "../../components/BookCard/BookCard";
@@ -8,18 +8,62 @@ import { getDataFromLocalStorage } from "../../utils/localStorage";
 const ListedBooks = () => {
   const [tabIndex, setTabIndex] = useState(1);
   const [readList, setReadList] = useState([]);
+  const [sortedReadList, setSortedReadList] = useState([]);
   const [wishList, setWishList] = useState([]);
+  const [sortedWishList, setSortedWishlist] = useState([]);
 
   useEffect(() => {
     const readBooks = getDataFromLocalStorage("read");
     const wishListBooks = getDataFromLocalStorage("wishlist");
     setReadList(readBooks);
+    setSortedReadList(readBooks);
+
     setWishList(wishListBooks);
+    setSortedWishlist(wishListBooks);
   }, []);
 
-  const handleReadBooksTab = () => {};
+  const handleSortBookList = (e) => {
+    const sortValue = e.target.value;
+    if (tabIndex === 1) {
+      if (sortValue === "rating") {
+        const sortReadList = [...readList].sort((a, b) => b.rating - a.rating);
+        setSortedReadList(sortReadList);
+      } else if (sortValue === "pages") {
+        const sortReadList = [...readList].sort(
+          (a, b) => b.totalPages - a.totalPages
+        );
+        setSortedReadList(sortReadList);
+      } else if (sortValue === "year") {
+        const sortReadList = [...readList].sort(
+          (a, b) => b.yearOfPublishing - a.yearOfPublishing
+        );
+        setSortedReadList(sortReadList);
+      } else {
+        setSortedReadList(readList);
+      }
+    } else if (tabIndex === 2) {
+      if (sortValue === "rating") {
+        const wishlistSorted = [...wishList].sort(
+          (a, b) => b.rating - a.rating
+        );
+        setSortedWishlist(wishlistSorted);
+      } else if (sortValue === "pages") {
+        const wishlistSorted = [...wishList].sort(
+          (a, b) => b.totalPages - a.totalPages
+        );
+        setSortedWishlist(wishlistSorted);
+      } else if (sortValue === "year") {
+        const wishlistSorted = [...wishList].sort(
+          (a, b) => b.yearOfPublishing - a.yearOfPublishing
+        );
+        setSortedWishlist(wishlistSorted);
+      } else {
+        setSortedWishlist(wishList);
+      }
+    }
+  };
 
-  const handleWishlistTab = () => {};
+  // console.log(readList);
 
   return (
     <section className="container mb-32">
@@ -28,11 +72,14 @@ const ListedBooks = () => {
           Books
         </h3>
         <div className="flex   justify-center mt-8">
-          <select className="select select-success  bg-green-900 text-white select-lg font-work-sans text-lg font-semibold">
+          <select
+            onChange={handleSortBookList}
+            className="select select-success  bg-green-900 text-white select-lg font-work-sans text-lg font-semibold"
+          >
             <option>Sorted By</option>
-            <option>English</option>
-            <option>Japanese</option>
-            <option>Italian</option>
+            <option value={"rating"}>Rating</option>
+            <option value={"pages"}>Number of pages</option>
+            <option value={"year"}>Publisher year</option>
           </select>
         </div>
 
@@ -68,8 +115,10 @@ const ListedBooks = () => {
         {/* books */}
         <div className="grid gap-6">
           {tabIndex === 1
-            ? readList.map((book) => <BookCard key={book.bookId} book={book} />)
-            : wishList.map((book) => (
+            ? sortedReadList.map((book) => (
+                <BookCard key={book.bookId} book={book} />
+              ))
+            : sortedWishList.map((book) => (
                 <BookCard key={book.bookId} book={book} />
               ))}
         </div>
@@ -77,7 +126,5 @@ const ListedBooks = () => {
     </section>
   );
 };
-
-ListedBooks.propTypes = {};
 
 export default ListedBooks;
