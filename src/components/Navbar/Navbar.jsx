@@ -17,7 +17,7 @@ const Navbar = () => {
           className={({ isActive }) => {
             return isActive
               ? "text-lg font-work-sans btn btn-outline text-green-900  font-semibold  rounded-lg border border-green-900 cursor-pointer hover:bg-green-900 hover:border-green-900"
-              : "text-black-80 text-lg font-work-sans btn";
+              : "text-black-80 text-lg font-work-sans btn  bg-transparent border-none shadow-none hover:bg-green-5 hover:text-green-900";
           }}
         >
           Home
@@ -27,7 +27,7 @@ const Navbar = () => {
           className={({ isActive }) => {
             return isActive
               ? "text-lg font-work-sans btn btn-outline text-green-900  font-semibold  rounded-lg border border-green-900 cursor-pointer hover:bg-green-900 hover:border-green-900"
-              : "text-black-80 text-lg font-work-sans btn";
+              : "text-black-80 text-lg font-work-sans btn  bg-transparent border-none shadow-none hover:bg-green-5 hover:text-green-900";
           }}
         >
           Listed Books
@@ -37,10 +37,20 @@ const Navbar = () => {
           className={({ isActive }) => {
             return isActive
               ? "text-lg font-work-sans btn btn-outline text-green-900  font-semibold  rounded-lg border border-green-900 cursor-pointer hover:bg-green-900 hover:border-green-900"
-              : "text-black-80 text-lg font-work-sans btn";
+              : "text-black-80 text-lg font-work-sans btn bg-transparent border-none shadow-none hover:bg-green-5 hover:text-green-900";
           }}
         >
           Pages to Read
+        </NavLink>
+        <NavLink
+          to={"/faq"}
+          className={({ isActive }) => {
+            return isActive
+              ? "text-lg font-work-sans btn btn-outline text-green-900  font-semibold  rounded-lg border border-green-900 cursor-pointer hover:bg-green-900 hover:border-green-900"
+              : "text-black-80 text-lg font-work-sans btn bg-transparent border-none shadow-none hover:bg-green-5 hover:text-green-900";
+          }}
+        >
+          FAQ
         </NavLink>
       </ul>
       <div className="hidden lg:flex items-center gap-4 flex-wrap">
