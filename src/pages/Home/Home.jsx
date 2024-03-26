@@ -5,7 +5,7 @@ import BooksList from "../../components/BooksList/BooksList";
 const Home = (props) => {
   return (
     <div>
-      {/* <Banner /> */}
+      <Banner />
       <BooksList />
     </div>
   );

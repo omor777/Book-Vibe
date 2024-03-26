@@ -13,8 +13,8 @@ const Navbar = (props) => {
           to={"/"}
           className={({ isActive }) => {
             return isActive
-              ? "text-lg font-work-sans text-green-900 font-semibold py-[14px] px-5 rounded-lg border border-green-900 cursor-pointer"
-              : "text-black-80 text-lg font-work-sans";
+              ? "text-lg font-work-sans btn btn-outline text-green-900  font-semibold  rounded-lg border border-green-900 cursor-pointer hover:bg-green-900 hover:border-green-900"
+              : "text-black-80 text-lg font-work-sans btn";
           }}
         >
           Home
@@ -23,8 +23,8 @@ const Navbar = (props) => {
           to={"/listed_books"}
           className={({ isActive }) => {
             return isActive
-              ? "text-lg font-work-sans text-green-900 font-semibold py-[14px] px-5 rounded-lg border border-green-900 cursor-pointer"
-              : "text-black-80 text-lg font-work-sans";
+              ? "text-lg font-work-sans btn btn-outline text-green-900  font-semibold  rounded-lg border border-green-900 cursor-pointer hover:bg-green-900 hover:border-green-900"
+              : "text-black-80 text-lg font-work-sans btn";
           }}
         >
           Listed Books
@@ -33,8 +33,8 @@ const Navbar = (props) => {
           to={"/pages_to_read"}
           className={({ isActive }) => {
             return isActive
-              ? "text-lg font-work-sans text-green-900 font-semibold py-[14px] px-5 rounded-lg border border-green-900 cursor-pointer"
-              : "text-black-80 text-lg font-work-sans ";
+              ? "text-lg font-work-sans btn btn-outline text-green-900  font-semibold  rounded-lg border border-green-900 cursor-pointer hover:bg-green-900 hover:border-green-900"
+              : "text-black-80 text-lg font-work-sans btn";
           }}
         >
           Pages to Read
