@@ -1,4 +1,4 @@
-import React from "react";
+
 import PropTypes from "prop-types";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdPeopleAlt } from "react-icons/md";
@@ -82,8 +82,8 @@ const BookCard = ({ book }) => {
   );
 };
 
-BookCard.propTypes = {};
+BookCard.propTypes = {
+  book: PropTypes.object,
+};
 
 export default BookCard;
-
-

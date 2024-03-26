@@ -1,8 +1,8 @@
-import React from "react";
+
 import { NavLink } from "react-router-dom";
 import Button from "../Button/Button";
 
-const Navbar = (props) => {
+const Navbar = () => {
   return (
     <nav className="flex items-center justify-between my-12 container mx-auto">
       <h3 className="text-black-100 text-28px font-work-sans font-bold">

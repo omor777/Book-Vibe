@@ -1,6 +1,7 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import ReusableButton from "../ReusableButton/ReusableButton";
+import PropTypes from "prop-types";
+import { FaRegStar } from "react-icons/fa";
 
 const Book = ({ book }) => {
   const { image, bookName, rating, tags, author, category, bookId } = book;
@@ -27,8 +28,8 @@ const Book = ({ book }) => {
         <div className="divider"></div>
         <div className="flex items-center justify-between">
           <p className="font-medium text-black-80 font-work-sans">{category}</p>
-          <p className="font-medium text-black-80 font-work-sans">
-            {rating.toFixed(2)}
+          <p className="font-medium text-black-80 font-work-sans flex items-center gap-2">
+            {rating} <FaRegStar className="mb-1" />
           </p>
         </div>
       </div>
@@ -36,6 +37,8 @@ const Book = ({ book }) => {
   );
 };
 
-Book.propTypes = {};
+Book.propTypes = {
+  book: PropTypes.object,
+};
 
 export default Book;
