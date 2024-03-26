@@ -62,7 +62,7 @@ const BookDetails = () => {
   };
 
   return (
-    <section className="container mb-40 px-4 lg:px-0">
+    <section className="container mb-40 px-4 lg:px-0 pt-10  lg:mt-48">
       <div className="grid lg:grid-cols-12 gap-12">
         <div className="rounded-2xl bg-black-5 flex p-8 sm:p-12 lg:p-[74px] items-center justify-center  lg:col-span-7">
           <img className="w-[70%] object-cover" src={image} alt="book-image" />
@@ -85,12 +85,12 @@ const BookDetails = () => {
           </p>
           <div className="flex items-center gap-3 mt-6">
             <p className="text-black-100 mr-1 font-bold font-work-sans">Tag</p>
-            <button className="btn rounded-full bg-green-5 text-green-900 hover:bg-green-5 hover:border-green-5 font-work-sans">
-            #{tags[0]}
-          </button>
-          <button className="btn rounded-full bg-green-5 text-green-900 hover:bg-green-5 hover:border-green-5 font-work-sans">
-            #{tags[1]}
-          </button>
+            <button className="btn btn-sm rounded-full bg-green-5 text-green-900 hover:bg-green-5 hover:border-green-5 font-work-sans">
+              #{tags[0]}
+            </button>
+            <button className="btn btn-sm rounded-full bg-green-5 text-green-900 hover:bg-green-5 hover:border-green-5 font-work-sans">
+              #{tags[1]}
+            </button>
           </div>
           <div className="divider"></div>
           <div className="relative overflow-x-auto">

@@ -68,13 +68,13 @@ const ListedBooks = () => {
   return (
     <section className="container mb-32 px-4 lg:px-0">
       <div>
-        <h3 className="bg-black-5 py-4 lg:py-8 rounded-2xl font-work-sans text-28px text-black-100 font-bold text-center">
+        <h3 className="bg-black-5 py-4 lg:py-8 rounded-2xl font-work-sans text-xl md:text-28px text-black-100 font-bold text-center">
           Books
         </h3>
         <div className="flex   justify-center mt-8">
           <select
             onChange={handleSortBookList}
-            className="select select-success  bg-green-900 text-white lg:select-lg font-work-sans text-lg font-semibold"
+            className="select select-success  bg-green-900 text-white font-work-sans text-lg font-semibold"
           >
             <option>Sorted By</option>
             <option value={"rating"}>Rating</option>

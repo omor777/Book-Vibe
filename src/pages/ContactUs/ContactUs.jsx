@@ -2,8 +2,8 @@ import formImg from "../../assets/contact.png";
 
 const ContactUs = () => {
   return (
-    <section className="container ">
-      <h2 className="text-[clamp(24px,5vw,36px)] font-bold font-work-sans text-center mt-40">
+    <section className="container  lg:mt-32 mb-14 px-4 lg:px-0">
+      <h2 className="text-[clamp(24px,5vw,36px)] font-bold font-work-sans text-center">
         Contact Us
       </h2>
       <p className="max-w-xl text-center mx-auto mt-4">

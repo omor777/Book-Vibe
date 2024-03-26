@@ -1,12 +1,5 @@
 import { useEffect, useState } from "react";
-import {
-  BarChart,
-  Bar,
-  Cell,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-} from "recharts";
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from "recharts";
 import { getDataFromLocalStorage } from "../../utils/localStorage";
 
 const PagesToRead = () => {
@@ -22,8 +15,6 @@ const PagesToRead = () => {
     acc.push(book);
     return acc;
   }, []);
-
-  
 
   const colors = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "red", "pink"];
 
@@ -71,16 +62,12 @@ const PagesToRead = () => {
     return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
   };
 
-
-
-  
-
   return (
-    <section className="container flex items-center justify-center mt-40">
-      <div className="overflow-x-auto bg-[#13131308] rounded-2xl p-14">
+    <section className="container flex items-center justify-center my-28">
+      <div className="overflow-x-auto bg-[#13131308] rounded-2xl p-4 lg:p-14 w-full flex items-center justify-center">
         <BarChart
-          width={900}
-          height={600}
+          width={1200}
+          height={450}
           data={data}
           margin={{
             top: 20,

@@ -34,10 +34,10 @@ const BookCard = ({ book }) => {
 
         <div className="flex flex-wrap items-center gap-3">
           <p className="text-black-100 font-bold font-work-sans mr-1">Tag</p>
-          <button className="btn rounded-full bg-green-5 text-green-900 hover:bg-green-5 hover:border-green-5 font-work-sans">
+          <button className="btn btn-sm rounded-full bg-green-5 text-green-900 hover:bg-green-5 hover:border-green-5 font-work-sans">
             #{tags[0]}
           </button>
-          <button className="btn rounded-full bg-green-5 text-green-900 hover:bg-green-5 hover:border-green-5 font-work-sans">
+          <button className="btn btn-sm rounded-full bg-green-5 text-green-900 hover:bg-green-5 hover:border-green-5 font-work-sans">
             #{tags[1]}
           </button>
           <p className="ml-1 flex flex-wrap items-center gap-2">
@@ -64,10 +64,10 @@ const BookCard = ({ book }) => {
         </div>
         <div className="divider"></div>
         <div className="flex items-center flex-wrap gap-3">
-          <button className="btn rounded-full bg-blue-5 text-blue-100 hover:bg-blue-5 hover:border-blue-5 font-work-sans">
+          <button className="btn btn-sm rounded-full bg-blue-5 text-blue-100 hover:bg-blue-5 hover:border-blue-5 font-work-sans">
             Category: {category}
           </button>
-          <button className="btn rounded-full bg-gold-15 text-gold-100 hover:bg-gold-15 hover:border-gold-15 font-work-sans">
+          <button className="btn btn-sm rounded-full bg-gold-15 text-gold-100 hover:bg-gold-15 hover:border-gold-15 font-work-sans">
             Rating: {rating}
           </button>
           <Link to={`/book/${bookId}`}>

@@ -11,10 +11,10 @@ const Book = ({ book }) => {
           <img src={image} alt="book" />
         </div>
         <div className="flex items-center gap-3 flex-wrap mb-4 ">
-        <button className="btn rounded-full bg-green-5 text-green-900 hover:bg-green-5 hover:border-green-5 font-work-sans">
+          <button className="btn btn-sm rounded-full bg-green-5 text-green-900 hover:bg-green-5 hover:border-green-5 font-work-sans">
             #{tags[0]}
           </button>
-          <button className="btn rounded-full bg-green-5 text-green-900 hover:bg-green-5 hover:border-green-5 font-work-sans">
+          <button className="btn btn-sm rounded-full bg-green-5 text-green-900 hover:bg-green-5 hover:border-green-5 font-work-sans">
             #{tags[1]}
           </button>
         </div>

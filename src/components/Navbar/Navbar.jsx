@@ -8,7 +8,7 @@ const Navbar = () => {
   const toggleValue = useContext(ToggleContext);
   return (
     <nav className="flex items-center justify-between my-12 container px-4 lg:px-0">
-      <h3 className="text-black-100 text-28px font-work-sans font-bold">
+      <h3 className="text-black-100 text-xl md:text-28px font-work-sans font-bold">
         Book Vibe
       </h3>
       <ul className="hidden lg:flex flex-wrap items-center gap-4 ">

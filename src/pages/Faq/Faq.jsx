@@ -1,7 +1,7 @@
 const Faq = () => {
   return (
-    <section className="container px-4 lg:px-0 ">
-      <h2 className="text-[clamp(24px,5vw,36px)] font-bold font-work-sans text-center mt-40">
+    <section className="container px-4 lg:px-0 mt-14 lg:mt-28 mb-14">
+      <h2 className="text-[clamp(24px,5vw,36px)] font-bold font-work-sans text-center ">
         Frequently Asked Question?
       </h2>
       <p className="max-w-xl text-center mx-auto mt-4">
@@ -12,7 +12,7 @@ const Faq = () => {
         <div className="join join-vertical w-full max-w-4xl mx-auto bg-black-5">
           <div className="collapse collapse-arrow join-item border border-base-300">
             <input type="radio" name="my-accordion-4" defaultChecked />
-            <div className="collapse-title text-xl font-semibold font-work-sans">
+            <div className="collapse-title md:text-xl font-semibold font-work-sans">
               How do I access the books I{"'"}ve purchased or rented?
             </div>
             <div className="collapse-content text-black-100">
@@ -26,7 +26,7 @@ const Faq = () => {
           </div>
           <div className="collapse collapse-arrow join-item border border-base-300">
             <input type="radio" name="my-accordion-4" />
-            <div className="collapse-title text-xl font-semibold font-work-sans">
+            <div className="collapse-title md:text-xl font-semibold font-work-sans">
               Can I read books offline?
             </div>
             <div className="collapse-content text-black-100">
@@ -40,7 +40,7 @@ const Faq = () => {
           </div>
           <div className="collapse collapse-arrow join-item border border-base-300">
             <input type="radio" name="my-accordion-4" />
-            <div className="collapse-title text-xl font-semibold font-work-sans">
+            <div className="collapse-title md:text-xl font-semibold font-work-sans">
               Do you offer refunds for purchased or rented books?
             </div>
             <div className="collapse-content text-black-100">
@@ -54,7 +54,7 @@ const Faq = () => {
           </div>
           <div className="collapse collapse-arrow join-item border border-base-300">
             <input type="radio" name="my-accordion-4" />
-            <div className="collapse-title text-xl font-semibold font-work-sans">
+            <div className="collapse-title md:text-xl font-semibold font-work-sans">
               Do you offer e-book rentals or subscriptions?
             </div>
             <div className="collapse-content text-black-100">
@@ -69,7 +69,7 @@ const Faq = () => {
           </div>
           <div className="collapse collapse-arrow join-item border border-base-300">
             <input type="radio" name="my-accordion-4" />
-            <div className="collapse-title text-xl font-semibold font-work-sans">
+            <div className="collapse-title md:text-xl font-semibold font-work-sans">
               Are there any restrictions on how many books I can purchase or
               rent at once?
             </div>
@@ -83,7 +83,7 @@ const Faq = () => {
           </div>
           <div className="collapse collapse-arrow join-item border border-base-300">
             <input type="radio" name="my-accordion-4" />
-            <div className="collapse-title text-xl font-semibold font-work-sans">
+            <div className="collapse-title md:text-xl font-semibold font-work-sans">
               What formats are available for the e-books?
             </div>
             <div className="collapse-content text-black-100">
@@ -97,7 +97,7 @@ const Faq = () => {
           </div>
           <div className="collapse collapse-arrow join-item border border-base-300">
             <input type="radio" name="my-accordion-4" />
-            <div className="collapse-title text-xl font-semibold font-work-sans">
+            <div className="collapse-title md:text-xl font-semibold font-work-sans">
               How do I access the books I{"'"}ve purchased or rented?
             </div>
             <div className="collapse-content text-black-100">
@@ -111,7 +111,7 @@ const Faq = () => {
           </div>
           <div className="collapse collapse-arrow join-item border border-base-300">
             <input type="radio" name="my-accordion-4" />
-            <div className="collapse-title text-xl font-semibold font-work-sans">
+            <div className="collapse-title md:text-xl font-semibold font-work-sans">
               Can I gift books to friends or family members?
             </div>
             <div className="collapse-content text-black-100">
