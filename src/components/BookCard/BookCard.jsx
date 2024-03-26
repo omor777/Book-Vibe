@@ -1,4 +1,3 @@
-
 import PropTypes from "prop-types";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdPeopleAlt } from "react-icons/md";
@@ -21,8 +20,8 @@ const BookCard = ({ book }) => {
   // console.log(book);
 
   return (
-    <div className="p-6 border border-black-60 rounded-2xl grid grid-cols-[250px_1fr] gap-6 items-center">
-      <div className="h-full bg-black-5 rounded-2xl flex items-center justify-center">
+    <div className="p-6 border border-black-60 rounded-2xl grid md:grid-cols-[250px_1fr] gap-6 items-center">
+      <div className="h-full bg-black-5 rounded-2xl flex items-center justify-center py-14 md:py-0">
         <img src={image} alt="" />
       </div>
       <div>

@@ -1,10 +1,9 @@
-import React from "react";
 import Banner from "../../components/Banner/Banner";
 import BooksList from "../../components/BooksList/BooksList";
 
-const Home = (props) => {
+const Home = () => {
   return (
-    <div>
+    <div className="px-4 lg:px-0">
       <Banner />
       <BooksList />
     </div>

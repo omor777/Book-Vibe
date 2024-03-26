@@ -1,14 +1,14 @@
-
 import { NavLink } from "react-router-dom";
 import Button from "../Button/Button";
+import { HiOutlineBars3BottomLeft } from "react-icons/hi2";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between my-12 container mx-auto">
+    <nav className="flex items-center justify-between my-12 container px-4 lg:px-0">
       <h3 className="text-black-100 text-28px font-work-sans font-bold">
         Book Vibe
       </h3>
-      <ul className="flex flex-wrap items-center gap-4">
+      <ul className="hidden lg:flex flex-wrap items-center gap-4 ">
         <NavLink
           to={"/"}
           className={({ isActive }) => {
@@ -40,9 +40,12 @@ const Navbar = () => {
           Pages to Read
         </NavLink>
       </ul>
-      <div className="flex items-center gap-4 flex-wrap">
+      <div className="hidden lg:flex items-center gap-4 flex-wrap">
         <Button bgColor={"#23BE0A"}>Sing In</Button>
         <Button bgColor={"#59C6D2"}>Sing Up</Button>
+      </div>
+      <div className="hover:bg-gray-200 duration-300 p-1 rounded-md lg:hidden">
+        <HiOutlineBars3BottomLeft className="text-3xl cursor-pointer" />
       </div>
     </nav>
   );

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import ReusableButton from "../ReusableButton/ReusableButton";
 import PropTypes from "prop-types";
 import { FaRegStar } from "react-icons/fa";
 
@@ -12,12 +11,12 @@ const Book = ({ book }) => {
           <img src={image} alt="book" />
         </div>
         <div className="flex items-center gap-3 flex-wrap mb-4 ">
-          <ReusableButton padding_x={"1rem"} height={"2.0625rem"}>
-            {tags[0]}
-          </ReusableButton>
-          <ReusableButton padding_x={"1rem"} height={"2.0625rem"}>
-            {tags[1]}
-          </ReusableButton>
+        <button className="btn rounded-full bg-green-5 text-green-900 hover:bg-green-5 hover:border-green-5 font-work-sans">
+            #{tags[0]}
+          </button>
+          <button className="btn rounded-full bg-green-5 text-green-900 hover:bg-green-5 hover:border-green-5 font-work-sans">
+            #{tags[1]}
+          </button>
         </div>
         <h3 className="text-2xl font-bold text-black-100 font-playFair-display mb-4">
           {bookName}

@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
-import ReusableButton from "../../components/ReusableButton/ReusableButton";
+
 import {
   getDataFromLocalStorage,
   saveDataToLocalStorage,
@@ -62,9 +62,9 @@ const BookDetails = () => {
   };
 
   return (
-    <section className="container mb-40">
+    <section className="container mb-40 px-4 lg:px-0">
       <div className="grid lg:grid-cols-12 gap-12">
-        <div className="rounded-2xl bg-black-5 flex p-[74px] items-center justify-center  lg:col-span-7">
+        <div className="rounded-2xl bg-black-5 flex p-8 sm:p-12 lg:p-[74px] items-center justify-center  lg:col-span-7">
           <img className="w-[70%] object-cover" src={image} alt="book-image" />
         </div>
         <div className="lg:col-span-5">
@@ -76,7 +76,7 @@ const BookDetails = () => {
           </p>
           <div className="divider"></div>
           <p className="text-black-80 mt-4 font-work-sans text-xl font-medium">
-            {author}
+            {category}
           </p>
           <div className="divider"></div>
           <p className="text-black-70 font-work-sans leading-26px">
@@ -85,12 +85,12 @@ const BookDetails = () => {
           </p>
           <div className="flex items-center gap-3 mt-6">
             <p className="text-black-100 mr-1 font-bold font-work-sans">Tag</p>
-            <ReusableButton height={"2.0625rem"} padding_x={"1rem"}>
-              #{tags[0]}
-            </ReusableButton>
-            <ReusableButton height={"2.0625rem"} padding_x={"1rem"}>
-              #{tags[1]}
-            </ReusableButton>
+            <button className="btn rounded-full bg-green-5 text-green-900 hover:bg-green-5 hover:border-green-5 font-work-sans">
+            #{tags[0]}
+          </button>
+          <button className="btn rounded-full bg-green-5 text-green-900 hover:bg-green-5 hover:border-green-5 font-work-sans">
+            #{tags[1]}
+          </button>
           </div>
           <div className="divider"></div>
           <div className="relative overflow-x-auto">
