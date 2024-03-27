@@ -81,7 +81,7 @@ const BookDetails = () => {
           <div className="divider"></div>
           <p className="text-black-70 font-work-sans leading-26px">
             <span className="font-bold text-black-100">Review</span> :{" "}
-            {review.slice(0, 200)}
+            {review}
           </p>
           <div className="flex items-center gap-3 mt-6">
             <p className="text-black-100 mr-1 font-bold font-work-sans">Tag</p>
