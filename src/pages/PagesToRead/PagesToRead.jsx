@@ -64,7 +64,7 @@ const PagesToRead = () => {
   };
 
   return (
-    <section className="container flex items-center justify-center my-28">
+    <section className="container flex items-center justify-center h-[90vh]">
       <div className="overflow-x-auto bg-[#13131308] rounded-2xl p-4 lg:p-14 w-full flex items-center justify-center">
         <BarChart
           width={1200}

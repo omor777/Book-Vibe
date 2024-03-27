@@ -3,7 +3,7 @@ import BooksList from "../../components/BooksList/BooksList";
 
 const Home = () => {
   return (
-    <div className="px-4 lg:px-0">
+    <div className="px-4 lg:px-0 mt-16">
       <Banner />
       <BooksList />
     </div>

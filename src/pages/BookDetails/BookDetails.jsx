@@ -62,9 +62,9 @@ const BookDetails = () => {
   };
 
   return (
-    <section className="container mb-40 px-4 lg:px-0 pt-10  lg:mt-48">
+    <section className="container mb-32 px-4 lg:px-0 mt-16">
       <div className="grid lg:grid-cols-12 gap-12">
-        <div className="rounded-2xl bg-black-5 flex p-8 sm:p-12 lg:p-[74px] items-center justify-center  lg:col-span-7">
+        <div className="rounded-2xl bg-black-5 flex p-8 sm:p-10 lg:p-16 items-center justify-center  lg:col-span-7 ">
           <img className="w-[70%] object-cover" src={image} alt="book-image" />
         </div>
         <div className="lg:col-span-5">
@@ -80,8 +80,7 @@ const BookDetails = () => {
           </p>
           <div className="divider"></div>
           <p className="text-black-70 font-work-sans leading-26px">
-            <span className="font-bold text-black-100">Review</span> :{" "}
-            {review}
+            <span className="font-bold text-black-100">Review</span> : {review}
           </p>
           <div className="flex items-center gap-3 mt-6">
             <p className="text-black-100 mr-1 font-bold font-work-sans">Tag</p>

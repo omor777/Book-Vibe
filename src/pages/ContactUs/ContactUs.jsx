@@ -2,7 +2,7 @@ import formImg from "../../assets/contact.png";
 
 const ContactUs = () => {
   return (
-    <section className="container  lg:mt-32 mb-14 px-4 lg:px-0">
+    <section className="container px-4 lg:px-0 mt-16 mb-20 md:mb-32">
       <h2 className="text-[clamp(24px,5vw,36px)] font-bold font-work-sans text-center">
         Contact Us
       </h2>
@@ -12,10 +12,10 @@ const ContactUs = () => {
         below.
       </p>
       <div className=" flex items-center justify-center mt-12">
-        <div className="grid grid-cols-1 gap-8 px-8 py-16 mx-auto  md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 bg-white shadow-lg rounded-2xl items-center">
+        <div className="grid grid-cols-1 gap-8 px-8  mx-auto py-8 md:py-12 md:grid-cols-2 md:px-12  bg-white shadow-lg rounded-2xl items-center">
           {/* contact start */}
           <div className="order-1 md:-order-1">
-            <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <div className="mx-auto max-w-screen-md">
               <form action="#" className="space-y-8">
                 <div>
                   <label

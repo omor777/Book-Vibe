@@ -14,7 +14,7 @@ const Root = () => {
       <ToggleContext.Provider value={toggleValue}>
         <div className="drawer">
           <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-          <div className="drawer-content">
+          <div className="drawer-content container">
             {/* Page content here */}
             <Navbar />
             <Outlet />

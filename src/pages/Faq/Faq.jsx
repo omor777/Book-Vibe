@@ -1,6 +1,6 @@
 const Faq = () => {
   return (
-    <section className="container px-4 lg:px-0 mt-14 lg:mt-28 mb-14">
+    <section className="container px-4 lg:px-0 mt-16 md:mb-32 mb-20">
       <h2 className="text-[clamp(24px,5vw,40px)] font-bold font-work-sans text-center ">
         Frequently Asked Question?
       </h2>

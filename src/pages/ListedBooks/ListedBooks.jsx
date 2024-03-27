@@ -66,7 +66,7 @@ const ListedBooks = () => {
   // console.log(readList);
 
   return (
-    <section className="container mb-32 px-4 lg:px-0">
+    <section className="container mb-20 mt-16 lg:mb-32 px-4 lg:px-0">
       <div>
         <h3 className="bg-black-5 py-4 lg:py-8 rounded-2xl font-work-sans text-xl md:text-28px text-black-100 font-bold text-center">
           Books
