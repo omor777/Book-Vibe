@@ -1,6 +1,16 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from "recharts";
+import {
+  BarChart,
+  Bar,
+  Cell,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
 import { getDataFromLocalStorage } from "../../utils/localStorage";
 
 const PagesToRead = () => {
@@ -63,34 +73,48 @@ const PagesToRead = () => {
     return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
   };
 
+  const CustomTooltip = ({ active, payload }) => {
+    if (active && payload && payload.length) {
+      return (
+        <div className="custom-tooltip">
+          <p className="label bg-white py-3 px-5 rounded-md font-medium font-work-sans">{`Pages: ${payload[0].value}`}</p>
+        </div>
+      );
+    }
+
+    return null;
+  };
+
   return (
     <section className="container flex items-center justify-center h-[90vh]">
-      <div className="overflow-x-auto bg-[#13131308] rounded-2xl p-4 lg:p-14 w-full flex items-center justify-center">
-        <BarChart
-          width={1200}
-          height={450}
-          data={data}
-          margin={{
-            top: 20,
-            right: 30,
-            left: 20,
-            bottom: 5,
-          }}
-        >
-          <CartesianGrid strokeDasharray="2 2" />
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Bar
-            dataKey="pages"
-            fill="#8884d8"
-            shape={<TriangleBar />}
-            label={{ position: "top" }}
+      <div className=" bg-[#13131308] rounded-2xl p-4 lg:p-10 w-full  h-[700px]">
+        <ResponsiveContainer>
+          <BarChart
+            data={data}
+            margin={{
+              top: 20,
+              right: 30,
+              left: 20,
+              bottom: 5,
+            }}
           >
-            {data.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={colors[index % 20]} />
-            ))}
-          </Bar>
-        </BarChart>
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Tooltip content={<CustomTooltip />} />
+            <Legend />
+            <Bar
+              dataKey="pages"
+              fill="#23BE0A"
+              shape={<TriangleBar />}
+              label={{ position: "top" }}
+            >
+              {data.map((entry, index) => (
+                <Cell key={`cell-${index}`} fill={colors[index % 20]} />
+              ))}
+            </Bar>
+          </BarChart>
+        </ResponsiveContainer>
       </div>
     </section>
   );
